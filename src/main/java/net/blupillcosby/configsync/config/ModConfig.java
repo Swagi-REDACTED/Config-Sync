@@ -18,6 +18,7 @@ public class ModConfig extends Config {
     
     public me.fzzyhmstrs.fzzy_config.validation.collection.ValidatedList<String> syncedMods = me.fzzyhmstrs.fzzy_config.validation.collection.ValidatedList.ofString();
 
+    @net.fabricmc.api.Environment(net.fabricmc.api.EnvType.CLIENT)
     public transient me.fzzyhmstrs.fzzy_config.config.ConfigAction selectMods = new me.fzzyhmstrs.fzzy_config.config.ConfigAction.Builder()
         .title(net.minecraft.network.chat.Component.literal("Select Mods"))
         .build(() -> {

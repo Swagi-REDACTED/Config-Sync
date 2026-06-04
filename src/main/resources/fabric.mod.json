@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "config_sync",
+	"version": "${version}",
+	"name": "Config Sync",
+	"description": "Ensures server configs are all always enforced to all connected clients!",
+	"authors": [
+		"blupillcosby"
+	],
+	"contact": {},
+	"license": "CC0-1.0",
+	"icon": "icon.png",
+	"environment": "*",
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*",
+		"fzzy_config": "*"
+	},
+	"recommends": {
+		"modmenu": "*"
+	},
+	"entrypoints": {
+		"main": [
+			"net.blupillcosby.configsync.ConfigSync"
+		],
+		"client": [
+			"net.blupillcosby.configsync.ConfigSyncClient"
+		]
+	}
+}
